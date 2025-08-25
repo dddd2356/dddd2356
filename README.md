@@ -56,7 +56,7 @@
 ## 🧩 알고리즘
 <div align="center">
   
-[![Solved.ac Profile](https://solvedac-readme-badge.vercel.app/api/v1/badge?user=dddd2356)](https://solved.ac/dddd2356/)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=dddd2356)](https://solved.ac/dddd2356/)
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=dddd2356&theme=warm)
 </div>
 
