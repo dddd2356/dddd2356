@@ -56,9 +56,10 @@
 ## 🧩 알고리즘
 <div align="center">
   
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=dddd2356)](https://solved.ac/dddd2356/)
+[![Solved.ac dddd2356](https://github-readme-solvedac.hyp3rflow.vercel.app/api/?handle=dddd2356&theme=dark)](https://solved.ac/dddd2356)
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=dddd2356&theme=warm)
 </div>
+
 <br/>
 
 ## 🌟 주요 프로젝트
