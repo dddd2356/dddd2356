@@ -53,6 +53,14 @@
 
 <br/>
 
+## 🧩 알고리즘
+<div align="center">
+  
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=dddd2356)](https://solved.ac/dddd2356/)
+![mazandi profile](http://mazandi.herokuapp.com/api?handle=dddd2356&theme=warm)
+</div>
+<br/>
+
 ## 🌟 주요 프로젝트
 
 <!-- 여기에 주요 프로젝트들을 추가하세요 -->
