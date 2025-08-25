@@ -77,7 +77,7 @@
 
 ## 💻 개발 환경
 
-javascript
+```javascript
 const dddd2356 = {
     code: ["Java", "TypeScript", "JavaScript", "SQL"],
     askMeAbout: ["웹 개발", "백엔드", "프론트엔드", "데이터베이스 설계"],
@@ -89,7 +89,7 @@ const dddd2356 = {
     },
     currentFocus: "최신 기술을 활용한 풀스택 애플리케이션 개발"
 };
-
+```
 
 <br/>
 
