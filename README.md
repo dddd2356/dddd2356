@@ -63,7 +63,7 @@
 
 ## 🌟 주요 프로젝트
 
-### 📋 선한병원 전자결재 시스템
+### 📋 [선한병원 전자결재 시스템](https://github.com/dddd2356/sunhan_electronic_payment_frontend )
 > ⚡ **Oracle-MySQL 연동 기반 고성능 기업용 전자결재 플랫폼**
 - **개발 기간**: 2025.07 ~  | **팀 구성**: 기획1명, 풀스택 개발자 1명
 - **기술 스택**: `Java` `Spring Boot` `Spring Security` `MySQL` `Oracle` `React` `TypeScript` `HTML` `CSS`
