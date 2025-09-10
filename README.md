@@ -86,7 +86,7 @@
  - 🛡️ 인증 데이터 처리 및 최종 URL 생성
 - **핵심 성과**: 의료 정보 보안 표준 준수, 안전한 환자 데이터 접근 구현
 
-### 💬 [사내 웹 메신저](https://github.com/dddd2356/sns_login)
+### 💬 [사내 웹 메신저](https://github.com/dddd2356/sunhan_websocket_frontend )
 > 🚀 **OAuth2 & WebSocket 기반 실시간 기업용 커뮤니케이션 플랫폼**
 - **개발 기간**: 2025.02-2025.06 | **팀 구성**: 풀스택 개발자 1명
 - **기술 스택**: `Spring Boot` `Spring Security` `OAuth2.0` `WebSocket` `MySQL` `MongoDB` `React` `TypeScript` `Swagger3`
