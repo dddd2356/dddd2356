@@ -12,8 +12,11 @@
 <br/>
 
 ## 📝 자격증
-![정보처리기사](https://img.shields.io/badge/정보처리기사-007396?style=for-the-badge)
-![SQLD](https://img.shields.io/badge/SQLD-4479A1?style=for-the-badge)
+![정보처리기사](https://img.shields.io/badge/정보처리기사-007396?style=for-the-badge&logo=java&logoColor=white)
+![SQLD](https://img.shields.io/badge/SQLD-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![AI-POT%202급](https://img.shields.io/badge/AI--POT%20(프롬프트활용능력)%202급-8A2BE2?style=for-the-badge&logo=openai&logoColor=white)
+
+<br/>
 
 ## 🛠️ 기술 스택
 
