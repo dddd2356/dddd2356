@@ -11,6 +11,10 @@
 
 <br/>
 
+## 📝 자격증
+![정보처리기사](https://img.shields.io/badge/정보처리기사-007396?style=for-the-badge)
+![SQLD](https://img.shields.io/badge/SQLD-4479A1?style=for-the-badge)
+
 ## 🛠️ 기술 스택
 
 ### 백엔드
