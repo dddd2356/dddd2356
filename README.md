@@ -157,7 +157,7 @@ const dddd2356 = {
 <br/>
 [![GitHub](https://img.shields.io/badge/GitHub-dddd2356-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dddd2356)
 
-![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdddd2356&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=Profile+Views&edge_flat=false)
+[![Profile Views](https://komarev.com/ghpvc/?username=dddd2356&color=brightgreen&style=flat)](https://github.com/dddd2356)
 
 </div>
 
