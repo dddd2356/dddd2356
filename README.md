@@ -154,10 +154,9 @@ const dddd2356 = {
 <div align="center">
   
 [![Email](https://img.shields.io/badge/Email-dudgus2109%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dudgus2109@gmail.com)
-<br/>
 [![GitHub](https://img.shields.io/badge/GitHub-dddd2356-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dddd2356)
 
-[![Profile Views](https://komarev.com/ghpvc/?username=dddd2356&color=brightgreen&style=flat)](https://github.com/dddd2356)
+[![Profile Views](https://komarev.com/ghpvc/?username=dddd2356&color=blueviolet&style=for-the-badge&label=VISITORS)](https://github.com/dddd2356)
 
 </div>
 
