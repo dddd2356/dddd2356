@@ -133,14 +133,16 @@
 ```javascript
 const dddd2356 = {
     code: ["Java", "TypeScript", "SQL"],
-    askMeAbout: ["웹 개발", "백엔드", "프론트엔드", "데이터베이스 설계"],
+    askMeAbout: ["백엔드 설계", "MSA", "성능 최적화", "데이터베이스 설계"],
     technologies: {
-        backend: ["Spring", "Spring Boot"],
+        backend: ["Spring Boot", "Spring Security", "JPA"],
         frontend: ["React", "TypeScript", "CSS"],
-        database: ["Oracle", "MySQL"],
+        database: ["MySQL", "PostgreSQL", "Redis", "Oracle"],
+        messaging: ["Kafka"],
+        infra: ["Docker", "AWS"],
         tools: ["IntelliJ IDEA"]
     },
-    currentFocus: "최신 기술을 활용한 풀스택 애플리케이션 개발"
+    currentFocus: "MSA 환경에서의 확장 가능한 백엔드 시스템 설계"
 };
 ```
 
