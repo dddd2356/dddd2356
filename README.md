@@ -1,12 +1,13 @@
-# 안녕하세요! 👋 저는 오영현입니다
-
+# 안녕하세요! 저는 오영현입니다
+ 
 <br/>
-
 ## 🚀 소개
-
-- 🔭 현재 풀스택 웹 개발을 하고 있습니다
+ 
+요구사항이 바뀌어도 **코드 수정을 최소화하는 설계**를 가장 중요한 가치로 생각하는 개발자입니다.
+ 
+- 🔭 Java/Spring 기반 백엔드 개발에 집중하고 있습니다
 - 🌱 확장 가능한 백엔드 시스템과 직관적인 사용자 인터페이스 구축에 열정이 있습니다
-- 💼 백엔드와 프론트엔드 개발 경험이 있습니다
+- 💼 **300명이 실제로 사용하는 서비스**를 MVP부터 운영까지 직접 만들어본 경험이 있습니다
 - 📫 언제나 협업과 새로운 기회에 열려있습니다!
 
 <br/>
@@ -24,6 +25,7 @@
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot&logoColor=black)
+![JPA](https://img.shields.io/badge/JPA-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
 
 ### 프론트엔드
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -33,7 +35,12 @@
 ### 데이터베이스 & 도구
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+
+### 인프라 & 메시징
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
 
 <br/>
 
@@ -67,52 +74,42 @@
 <br/>
 
 ## 🌟 주요 프로젝트
-
-### 📋 [선한병원 전자결재 시스템](https://github.com/dddd2356/sunhan_electronic_payment_frontend )
-> ⚡ **Oracle-MySQL 연동 기반 고성능 기업용 전자결재 플랫폼**
-- **개발 기간**: 2025.07 ~  | **팀 구성**: 기획1명, 풀스택 개발자 1명
-- **기술 스택**: `Java` `Spring Boot` `Spring Security` `MySQL` `Oracle` `React` `TypeScript` `HTML` `CSS`
-- **주요 기능**:
- - 📝 근로계약서 및 휴가원, 근무현황표 작성/승인 시스템
- - 💼 동적 결재라인 시스템
- - 🔄 Oracle-MySQL 실시간 데이터 동기화
- - 📄 PDF 다운로드 및 문서 관리
- - 👨‍💼 관리자 권한 설정 및 휴가 할당량 관리
- - ⏰ 새벽 2시 자동 스케줄러 동기화
-- **핵심 성과**: **N+1 문제 해결로 쿼리 88개 → 8개로 최적화 (90% 성능 향상)**, k6 성능 테스트 도입
-
+ 
+### 📦 [BoxOffice - MSA B2B 물류 허브 관리 플랫폼](https://github.com/boxoffice-sparta/boxoffice)
+> 🏭 **Kafka 기반 이벤트 드리븐 MSA 물류 플랫폼**
+- **개발 기간**: 2026.05 | **팀 구성**: 6인 | **담당**: 공통 모듈, 허브 서비스
+- **기술 스택**: `Java` `Spring Boot` `Spring Security` `JPA` `Keycloak` `PostgreSQL` `Redis` `Kafka` `Docker` `Gemini AI` `Slack`
+- **주요 기능 & 성과**:
+  - 🔄 허브 폐쇄 시 **Drain 패턴(CLOSING→INACTIVE 2단계 삭제 정책)** 설계로 기존 배송 소진 후 안전 폐쇄하는 무중단 운영 흐름 구현
+  - 📦 재고 이전 대상 선정 시 **FFD(First Fit Decreasing) 알고리즘**에 가용 용량·거리 복합 점수 정렬을 적용해 특정 허브 재고 집중 문제 해소
+  - ⚡ 허브·경로 정보에 **Redis 캐싱(TTL 24h)** 적용 및 `@CacheEvict`로 수정·삭제 시 즉시 무효화하여 반복 DB 접근 제거
+  - 📨 재고 이전 dispatch 후 `@TransactionalEventListener`로 Kafka 이벤트 발행, 배정 결과 Consumer 수신 → 실패 시 **1초 간격 3회 재시도 후 DLT 격리**로 메시지 유실 방지
+  - 🧩 `ApiResponse` `PageResponse` `BaseException` `ErrorCode`를 **common 모듈**로 분리하여 전체 서비스에 일관된 API 규격 적용
+### 🍱 [오늘 한끼 - 통합 배달 주문 관리 서비스](https://github.com/GolemOnce/Sparta-TodayEats)
+> 🚀 **Gemini AI 연동 배달 주문·결제·내역 관리 플랫폼**
+- **개발 기간**: 2026.04 | **팀 구성**: 5인 | **담당**: 주문 도메인
+- **기술 스택**: `Java` `Spring Boot` `Spring Security` `JPA` `PostgreSQL` `Redis` `Docker` `AWS` `Gemini AI`
+- **주요 기능 & 성과**:
+  - 🔒 주문 상태 동시 변경 요청 시 낙관적 락(재시도 증가)·비관적 락(DB 블로킹) 대신 **WHERE절 현재 상태 조건부 UPDATE**로 전환해 DB 락 없이 동시성 제어
+  - ⚛️ 취소 가능 여부 체크와 UPDATE 사이 타임갭으로 발생하는 레이스 컨디션을 **PostgreSQL Native Query 단일 쿼리**로 PENDING 조건과 상태 변경을 원자적으로 처리하여 조건 우회 가능성 제거
+  - 🤖 상품 등록 시 Gemini AI가 상품 설명을 자동 생성하고 AI 요청·응답 이력을 별도 기록·관리
+### 📋 [선한병원 전자결재 시스템](https://github.com/dddd2356/sunhan_electronic_payment_frontend)
+> ⚡ **300명 실사용 기업용 전자결재 플랫폼**
+- **개발 기간**: 2025.06 ~ 2026.03 | **팀 구성**: 1인 (풀스택)
+- **기술 스택**: `Java` `Spring Boot` `Spring Security` `JPA` `MySQL` `Oracle` `React` `TypeScript`
+- **주요 기능 & 성과**:
+  - 📉 휴가 통계 조회 시 **N+1 문제(768개 쿼리)** 를 IN절 일괄 조회·Fetch Join·Map 인메모리 처리 조합으로 **6개 쿼리로 통합, 응답 속도 3s → 0.7s (77% 개선)**
+  - 🔐 배포 후 쿠키 미전달 인증 오류 → LocalStorage 긴급 복구 후 **httpOnly 쿠키 방식으로 전면 리팩토링**하여 XSS 취약점 해소
+  - 🗃️ 내부망 Oracle 종속 문제를 **MySQL 마이그레이션 및 외부망 전용 인증 시스템 구축**으로 서비스 접근성·운영 연속성 확보
+  - 📄 `@TransactionalEventListener(AFTER_COMMIT)`으로 트랜잭션 확정 후에만 **PDF 아카이빙** 실행하여 결재 문서 원본 무결성 확보
+  - ⚙️ **동적 결재선 구조** 구현으로 조직 구조 변경 시 코드 수정·재배포 없이 즉시 대응 가능
 ### 🏥 [선한병원 건강정보고속도로](https://github.com/dddd2356/sunhan_myhealthway_frontend)
 > 🔐 **암호화 기반 안전한 의료 정보 웹뷰어 연결 플랫폼**
-- **개발 기간**: 2025.08 | **팀 구성**: 풀스택 개발자 1명
-- **기술 스택**: `Spring Boot` `Spring Security` `React` `TypeScript` `MySQL`
-- **주요 기능**:
- - 🔒 주민등록번호 암호화를 통한 보안 강화
- - 🌐 암호화된 URL 기반 웹뷰어 접근
- - ✅ 필수 필드 유효성 검사 시스템
- - 🛡️ 인증 데이터 처리 및 최종 URL 생성
-- **핵심 성과**: 의료 정보 보안 표준 준수, 안전한 환자 데이터 접근 구현
-
-### 💬 [사내 웹 메신저](https://github.com/dddd2356/sunhan_websocket_frontend )
-> 🚀 **OAuth2 & WebSocket 기반 실시간 기업용 커뮤니케이션 플랫폼**
-- **개발 기간**: 2025.02-2025.06 | **팀 구성**: 풀스택 개발자 1명
-- **기술 스택**: `Spring Boot` `Spring Security` `OAuth2.0` `WebSocket` `MySQL` `MongoDB` `React` `TypeScript` `Swagger3`
-- **주요 기능**:
- - 🔑 OAuth2 기반 간편 로그인 시스템
- - ⚡ WebSocket 구독 방식 실시간 메시징
- - 🖼️ 이미지 캐시 저장으로 네트워크 최적화
- - 🔄 AccessToken/RefreshToken 인증 체계
-- **핵심 성과**: 네트워크 요청 최적화를 통한 성능 향상, 60분 토큰 만료 시간 설정으로 보안 강화
-
-### 🍹 [당당(DangDang) - 당 관리 플랫폼](https://github.com/capstone-design-a4)
-> 📊 **개인별 음료 섭취량 추적 및 건강 관리 웹 애플리케이션**
-- **개발 기간**: 2024.03-2024.06 | **팀 구성**: 프론트엔드 2명, 백엔드 3명
-- **기술 스택**: `Java` `Spring Boot` `Spring Security` `MySQL`
-- **주요 기능**:
- - 🗄️ 체계적인 ERD 구축 및 데이터베이스 설계
- - 🔍 음료 검색 및 섭취량 추적 API 구현
- - 📈 카페인/당/칼로리 기준 정렬 시스템
- - ⭐ 즐겨찾기 기능으로 사용자 편의성 향상
-- **핵심 성과**: 무작위 데이터를 체계적 정렬로 개선, 사용자 맞춤형 건강 정보 제공
+- **개발 기간**: 2025.08 | **팀 구성**: 1인 (풀스택)
+- **기술 스택**: `Spring Boot` `Spring Security` `JPA` `MySQL` `React` `TypeScript`
+- **주요 기능 & 성과**:
+  - 🔒 C# 환경 암호화 미동작 문제를 **Spring 기반 공통 암호화 API**로 해결하여 플랫폼 간 암호화 호환성 확보
+  - 🌐 암호화된 URL 기반 외부 EHR 뷰어 안전 연결로 의료 정보 보안 표준 준수
 
 <div align="center">
  
